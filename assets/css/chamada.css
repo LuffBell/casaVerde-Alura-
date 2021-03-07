@@ -16,14 +16,72 @@
   margin-bottom: 1.55rem;
 }
 
-.chamada__imagem {
+.chamada__imagem1 {
   position: absolute;
   top: 3.25rem;
   right: 0;
+}
+
+.chamada__imagem2 {
+  display: none;
 }
 
 .chamada__formulario {
   position: relative;
   
   z-index: 2;
+}
+
+.chamada2__imagem {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .chamada {
+    padding-left: 11.5rem;
+    padding-top: 9rem;
+
+    background-image: url(../img/splash_cabecalho_desktop.svg);
+    background-position: 35rem;
+    z-index: -2;
+  }
+
+  .chamada__texto {
+    width: 30rem;
+  }
+
+  .chamada__imagem1 {
+    display: none;
+  }
+
+  .chamada__imagem2 {
+    display: inline-block;
+    position: absolute;
+    top: -5rem;
+    right: 30rem;
+    z-index: -1;
+  }
+
+  .chamada__formulario {
+    width: 40%;
+    display: flex;
+    max-height: 75px;
+  }
+
+  .chamada2 {
+    display: flex;
+    justify-content: center;
+    max-height: 350px;
+    margin-top: 15rem;
+  }
+
+  .chamada2__imagem {
+    display: inline;
+    max-width: 585px;
+    max-height: 440px;
+  }
+
+  .chamada2__cartao {
+    padding: 0 2rem;
+  }
 }

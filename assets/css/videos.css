@@ -5,3 +5,14 @@
 
   margin-top: 5rem;
 }
+
+@media (min-width: 1200px) {
+  .videos--section__lista {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .videos--section__itens {
+    margin-left: 3rem;
+  }
+}

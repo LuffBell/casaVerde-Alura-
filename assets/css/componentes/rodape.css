@@ -42,3 +42,10 @@
 
   margin-bottom: .5rem;
 }
+
+@media (min-width: 1200px) {
+  .rodape {
+    display: flex;
+    justify-content: space-around;
+  }
+}

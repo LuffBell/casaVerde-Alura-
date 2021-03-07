@@ -19,3 +19,31 @@
 .cabecalho__carrinho {
   width: 1.75rem;
 }
+
+.desktop-nav {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .cabecalho {
+    justify-content: space-around;
+  }
+
+  .cabecalho__carrinho {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: flex;
+  }
+
+  .desktop-nav__itens {
+    margin-left: 1rem;
+  }
+
+  .desktop-nav__itens-ultimo {
+    margin-left: 2rem;
+    font-weight: bold;
+    color: var(--preto);
+  }
+}
