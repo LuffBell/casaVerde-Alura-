@@ -43,9 +43,29 @@
   margin-bottom: .5rem;
 }
 
+.ilustracao__rodape {
+  display: none;
+}
+
 @media (min-width: 1200px) {
   .rodape {
+    padding-bottom: 0;
+
+    background-image: url(../../img/splash_rodape-desktop.svg);
+    background-position: bottom left;
+  }
+
+  .rodape__div {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+  }
+
+  .rodape__unidade {
+    margin-left: 3rem;
+  }
+
+  .ilustracao__rodape {
+    display: inline-block;
+    margin-left: auto;
   }
 }

@@ -1,0 +1,63 @@
+.depoimento {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .depoimento {
+    display: flex;
+
+    margin-top: 7.5rem;
+    margin-bottom: 7.5rem;
+  
+    padding-top: 6.25rem;
+
+    background-image: url(../img/splash_retangulo.svg);
+    background-repeat: no-repeat;
+    background-position-x: -15rem;
+    background-position-y: 0rem;
+    }
+
+  .depoimento__imagem {
+    margin-right: 2rem;
+  }
+
+  .depoimento__titulo {
+    margin-top: 3rem;
+
+    line-height: 42px;
+  }
+
+  .aspas {
+    display: block;
+
+    width: 35rem;
+    height: 4.5rem;
+
+    margin-right: 1rem;
+
+    border-radius: 50%;
+
+    background-color: var(--amarelo);
+    background-image: url(../img/icones/aspas.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 3rem;
+  }
+
+  .depoimento__texto {
+    display: flex;
+
+    line-height: 26px;
+
+    padding-top: 2rem;
+  }
+
+  .credenciais {
+    color: var(--preto);
+
+    font-size: var(--tamanho-titulo);
+
+    margin-top: 3rem;
+  }
+}
+

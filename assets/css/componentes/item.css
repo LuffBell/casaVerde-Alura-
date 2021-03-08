@@ -40,3 +40,9 @@
 .item__icone--caminhao {
   background-image: url(../../img/icones/truck.svg);
 }
+
+@media (min-width: 1200px) {
+  .item {
+    margin-bottom: 2rem;
+  }
+}

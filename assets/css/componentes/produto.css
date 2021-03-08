@@ -61,13 +61,5 @@
 }
 
 @media (min-width: 1200px) {
-  .produtos--section__lista {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
 
-  .produtos--section__itens {
-    width: 30%;
-  }
 }

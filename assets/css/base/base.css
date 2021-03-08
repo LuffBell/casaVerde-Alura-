@@ -6,6 +6,8 @@ body {
   font-size: var(--tamanho-corpo);
   color: var(--cinza);
 
+  width: 100vw;
+
   background: url(../../img/fundo-textura.png), url(../../img/fundo-linhas.svg);
   background-position: center;
 }
@@ -44,11 +46,28 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .titulo--desktop {
-    font-size: var(--tamanho-titulo-desktop);
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
+  .titulo--destaque--2 {
+    font-size: var(--tamanho-titulo-destaque-2);
+  }
+
+  .titulo--desktop {
+    font-size: var(--tamanho-titulo-desktop);
+
+    display: block;
+
+    margin-top: 8rem;
+  }
+  
   .titulo--destaque--desktop {
     font-size: var(--tamanho-titulo-destaque-desktop);
+  }
+
+  .alinhamento--desktop {
+    text-align: left;
   }
 }

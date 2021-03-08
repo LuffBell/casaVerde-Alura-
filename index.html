@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="assets/css/base/base.css">
   <link rel="stylesheet" href="assets/css/componentes/cabecalho.css">
   <link rel="stylesheet" href="assets/css/chamada.css">
+  <link rel="stylesheet" href="assets/css/instrucao.css">
   <link rel="stylesheet" href="assets/css/produtos.css">
+  <link rel="stylesheet" href="assets/css/depoimento.css">
   <link rel="stylesheet" href="assets/css/videos.css">
   <link rel="stylesheet" href="assets/css/componentes/botoes.css">
   <link rel="stylesheet" href="assets/css/componentes/imput.css">
@@ -24,183 +26,208 @@
   <header class="container cabecalho">
     <img src="assets/img/logo.png" alt="Logo da Página" class="cabecalho__logo">
     <a href="#" aria-label="Meu carrinho"><img src="assets/img/icones/carrinho.svg" alt="Ir para o carrinho de compras" class="cabecalho__carrinho"></a>
-    <ul class="desktop-nav">
-      <li><a href="#" class="desktop-nav__itens">Como fazer  /</a></li>
-      <li><a href="#" class="desktop-nav__itens">Ofertas  /</a></li>
-      <li><a href="#" class="desktop-nav__itens">Depoimentos  /</a></li>
-      <li><a href="#" class="desktop-nav__itens">Videos /</a></li>
-      <li><a href="#" class="desktop-nav__itens desktop-nav__itens-ultimo">Meu carrinho</a></li>
-    </ul>
+    <nav class="cabecalho__nav">
+      <ul class="cabecalho__nav--lista">
+        <li class="cabecalho__nav--itens"><a href="#" class="cabecalho__nav--links">Como fazer</a></li>
+        <li class="cabecalho__nav--itens">/</li>
+        <li class="cabecalho__nav--itens"><a href="#" class="cabecalho__nav--links">Ofertas</a></li>
+        <li class="cabecalho__nav--itens">/</li>
+        <li class="cabecalho__nav--itens"><a href="#" class="cabecalho__nav--links">Depoimentos</a></li>
+        <li class="cabecalho__nav--itens">/</li>
+        <li class="cabecalho__nav--itens"><a href="#" class="cabecalho__nav--links">Vídeos</a></li>
+        <li class="cabecalho__nav--itens">/</li>
+        <li class="cabecalho__nav--itens"><a href="#" class="cabecalho__nav--links">Meu carrinho</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     <section class="chamada container">
       <h2 class="titulo titulo--desktop">Sua casa com as<span class="titulo--destaque titulo--destaque--desktop">melhores <br> plantas</span></h2>
       <p class="chamada__texto texto">Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torná-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca</p>
-      <img src="assets/img/planta-home.png" alt="Planta" class="chamada__imagem1">
-      <img src="assets/img/imagem-hero 1.png" alt="Planta" class="chamada__imagem2">
-      <form action="#" class="chamada__formulario">
-        <input type="text" class="imput imput--email imput--icone imput__desktop" placeholder="Insira seu e-mail" aria-label="Insira seu e-mail">
-        <button class='botao botao__desktop'>Assinar Newsletter</button>
+      <img src="assets/img/planta-home.png" alt="Foto de uma planta" class="chamada__imagem--mobile">
+      <img src="assets/img/imagem-hero 1.png" alt="Foto de uma planta" class="chamada__imagem--desktop">
+      <form class="chamada__formulario">
+        <input type="text" class="imput imput--email imput--icone" placeholder="Insira seu e-mail" aria-label="Insira seu e-mail">
+        <button class="botao">Assinar Newsletter</button>
       </form>
     </section>
-    <section class="chamada2">
-      <img src="assets/img/planta-home-sessao2.png" alt="Imagem da planta" class="chamada2__imagem">
-      <article class="cartao chamada2__cartao">
-          <p class="titulo alinhamento--centro">
-            Como conseguir<spam class="titulo--destaque">minha planta</spam>
-          </p>
-          <ul class="lista--item">
-            <li class="item">
-              <spam class="item__icone item__icone--seta"></spam>
-              <p>Escolha suas plantas</p>
-            </li>
-            <li class="item">
-              <spam class="item__icone item__icone--carrinho"></spam>
-              <p>Faça seu pedido</p>
-            </li>
-            <li class="item">
-              <spam class="item__icone item__icone--caminhao"></spam>
-              <p>Aguarde na sua casa</p>
-            </li>
-          </ul>
+    <section class="instrucao container">
+      <img src="assets/img/planta-home-sessao2.png" alt="Foto  de uma planta" class="instrucao__imagem">
+      <article class="cartao cartao--desktop">
+        <p class="titulo alinhamento--centro alinhamento--desktop">
+          Como conseguir<spam class="titulo--destaque titulo--destaque--2">minha planta</spam>
+        </p>
+        <ul class="lista--item">
+          <li class="item">
+            <spam class="item__icone item__icone--seta"></spam>
+            <p>Escolha suas plantas</p>
+          </li>
+          <li class="item">
+            <spam class="item__icone item__icone--carrinho"></spam>
+            <p>Faça seu pedido</p>
+          </li>
+          <li class="item">
+            <spam class="item__icone item__icone--caminhao"></spam>
+            <p>Aguarde na sua casa</p>
+          </li>
+        </ul>
       </article>
     </section>
-    <section>
-      <div class="produtos--section">
-        <p class="titulo titulo--desktop alinhamento--centro">Conheça nossos<span class="titulo--destaque titulo--destaque--desktop">Produtos</span></p>
-        <ul class="produtos--section__lista">
-          <li class="produtos--section__itens">
-            <article class="produtos">
-              <img src="assets/img/produto-01.png" alt="Foto do produto" class="produtos__imagem">
-              <div class="produtos__conteudo">
-                <h3 class="produtos__titulo titulo--destaque">Ajuga Reptans</h3>
-                <p class="produtos__preco">R$ 20,00</p>
-                <a href="#" class="produtos__comprar">
-                  Comprar<spam class="produtos__comprar--icone"></spam>
-                </a>
-              </div>
-            </article>
-          </li>
-          <li class="produtos--section__itens">
-            <article class="produtos">
-              <img src="assets/img/produto-02.png" alt="Foto do produto" class="produtos__imagem">
-              <div class="produtos__conteudo">
-                <h3 class="produtos__titulo titulo--destaque">Cordyline friticosa</h3>
-                <p class="produtos__preco">R$ 20,00</p>
-                <a href="#" class="produtos__comprar">
-                  Comprar<spam class="produtos__comprar--icone"></spam>
-                </a>
-              </div>
-            </article>
-          </li>
-          <li class="produtos--section__itens">
-            <article class="produtos">
-              <img src="assets/img/produto-03.png" alt="Foto do produto" class="produtos__imagem">
-              <div class="produtos__conteudo">
-                <h3 class="produtos__titulo titulo--destaque">Crassula ovata</h3>
-                <p class="produtos__preco">R$ 20,00</p>
-                <a href="#" class="produtos__comprar">
-                  Comprar<spam class="produtos__comprar--icone"></spam>
-                </a>
-              </div>
-            </article>
-          </li>
-          <li class="produtos--section__itens">
-            <article class="produtos">
-              <img src="assets/img/produto-04.png" alt="Foto do produto" class="produtos__imagem">
-              <div class="produtos__conteudo">
-                <h3 class="produtos__titulo titulo--destaque">Cyperus rotundus</h3>
-                <p class="produtos__preco">R$ 20,00</p>
-                <a href="#" class="produtos__comprar">
-                  Comprar<spam class="produtos__comprar--icone"></spam>
-                </a>
-              </div>
-            </article>
-          </li>
-          <li class="produtos--section__itens">
-            <article class="produtos">
-              <img src="assets/img/produto-05.png" alt="Foto do produto" class="produtos__imagem">
-              <div class="produtos__conteudo">
-                <h3 class="produtos__titulo titulo--destaque">Delairea odorata</h3>
-                <p class="produtos__preco">R$ 20,00</p>
-                <a href="#" class="produtos__comprar">
-                  Comprar<spam class="produtos__comprar--icone"></spam>
-                </a>
-              </div>
-            </article>
-          </li>
-          <li class="produtos--section__itens">
-            <article class="produtos">
-              <img src="assets/img/produto-06.png" alt="Foto do produto" class="produtos__imagem">
-              <div class="produtos__conteudo">
-                <h3 class="produtos__titulo titulo--destaque">Datura metel</h3>
-                <p class="produtos__preco">R$ 20,00</p>
-                <a href="#" class="produtos__comprar">
-                  Comprar<spam class="produtos__comprar--icone"></spam>
-                </a>
-              </div>
-            </article>
-          </li>
-        </ul>
-      </div>
+    <section class="produtos__section container">
+      <p class="titulo alinhamento--centro">Conheça nossos<span class="titulo--destaque titulo--destaque--desktop">Produtos</span></p>
+      <ul class="produtos__lista">
+        <li class="produtos__itens">
+          <article class="produtos">
+            <img src="assets/img/produto-01.png" alt="Foto do produto" class="produtos__imagem">
+            <div class="produtos__conteudo">
+              <h3 class="produtos__titulo titulo--destaque">Ajuga Reptans</h3>
+              <p class="produtos__preco">R$ 20,00</p>
+              <a href="#" class="produtos__comprar">
+                Comprar<spam class="produtos__comprar--icone"></spam>
+              </a>
+            </div>
+          </article>
+        </li>
+        <li class="produtos__itens">
+          <article class="produtos">
+            <img src="assets/img/produto-02.png" alt="Foto do produto" class="produtos__imagem">
+            <div class="produtos__conteudo">
+              <h3 class="produtos__titulo titulo--destaque">Cordyline friticosa</h3>
+              <p class="produtos__preco">R$ 20,00</p>
+              <a href="#" class="produtos__comprar">
+                Comprar<spam class="produtos__comprar--icone"></spam>
+              </a>
+            </div>
+          </article>
+        </li>
+        <li class="produtos__itens">
+          <article class="produtos">
+            <img src="assets/img/produto-03.png" alt="Foto do produto" class="produtos__imagem">
+            <div class="produtos__conteudo">
+              <h3 class="produtos__titulo titulo--destaque">Crassula ovata</h3>
+              <p class="produtos__preco">R$ 20,00</p>
+              <a href="#" class="produtos__comprar">
+                Comprar<spam class="produtos__comprar--icone"></spam>
+              </a>
+            </div>
+          </article>
+        </li>
+        <li class="produtos__itens">
+          <article class="produtos">
+            <img src="assets/img/produto-04.png" alt="Foto do produto" class="produtos__imagem">
+            <div class="produtos__conteudo">
+              <h3 class="produtos__titulo titulo--destaque">Cyperus rotundus</h3>
+              <p class="produtos__preco">R$ 20,00</p>
+              <a href="#" class="produtos__comprar">
+                Comprar<spam class="produtos__comprar--icone"></spam>
+              </a>
+            </div>
+          </article>
+        </li>
+        <li class="produtos__itens">
+          <article class="produtos">
+            <img src="assets/img/produto-05.png" alt="Foto do produto" class="produtos__imagem">
+            <div class="produtos__conteudo">
+              <h3 class="produtos__titulo titulo--destaque">Delairea odorata</h3>
+              <p class="produtos__preco">R$ 20,00</p>
+              <a href="#" class="produtos__comprar">
+                Comprar<spam class="produtos__comprar--icone"></spam>
+              </a>
+            </div>
+          </article>
+        </li>
+        <li class="produtos__itens">
+          <article class="produtos">
+            <img src="assets/img/produto-06.png" alt="Foto do produto" class="produtos__imagem">
+            <div class="produtos__conteudo">
+              <h3 class="produtos__titulo titulo--destaque">Datura metel</h3>
+              <p class="produtos__preco">R$ 20,00</p>
+              <a href="#" class="produtos__comprar">
+                Comprar<spam class="produtos__comprar--icone"></spam>
+              </a>
+            </div>
+          </article>
+        </li>
+      </ul>
     </section>
-    <section>
-      <div class="videos--section">
-        <p class="titulo titulo--desktop alinhamento--centro">Veja aqui nossos<span class="titulo--destaque titulo--destaque--desktop">videos</span></p>
-        <ul class="videos--section__lista">
-          <li class="videos--section__itens">
-            <article class="cartao-de-video">
-              <div class="cartao-de-video__video"><img src="https://picsum.photos/278/252" alt="Banner do video"></div>
-              <h3 class="cartao-de-video__titulo">Video XYZ</h3>
-              <p>Publicado em março 2019</p>
-            </article>
-          </li>
-          <li class="videos--section__itens">
-            <article class="cartao-de-video">
-              <div class="cartao-de-video__video"><img src="https://picsum.photos/278/252" alt="Banner do video"></div>
-              <h3 class="cartao-de-video__titulo">Video XYZ</h3>
-              <p>Publicado em março 2019</p>
-            </article>
-          </li>
-          <li class="videos--section__itens">
-            <article class="cartao-de-video">
-              <div class="cartao-de-video__video"><img src="https://picsum.photos/278/252" alt="Banner do video"></div>
-              <h3 class="cartao-de-video__titulo">Video XYZ</h3>
-              <p>Publicado em março 2019</p>
-            </article>
-          </li>
-          <li class="videos--section__itens">
-            <article class="cartao-de-video">
-              <div class="cartao-de-video__video"><img src="https://picsum.photos/278/252" alt="Banner do video"></div>
-              <h3 class="cartao-de-video__titulo">Video XYZ</h3>
-              <p>Publicado em março 2019</p>
-            </article>
-          </li>
-        </ul>
-      </div>
+    <section class="depoimento container">
+      <img src="assets/img/moça-home.png" alt="" class="depoimento__imagem">
+      <article>
+        <h3 class="texto titulo--destaque titulo--destaque--2 depoimento__titulo">Não acredite em nós <br> veja o que os clientes tem a dizer</h3>
+        <div class="depoimento__texto">
+          <span class="aspas"></span>
+          <div>
+            <p>
+              Nullam a orci vitae orci fringilla pulvinar sit amet quis felis. Quisque vel ornare arcu. Fusce urna quam, tempus vitae vehicula et, efficitur non sem. Morbi tincidunt congue lorem eu tempor. Nulla bibendum ligula lorem, vel sollicitudin nibh scelerisque non. Proin ut nisi congue, sodales tellus at, consectetur tellus. Praesent ac elit quis purus congue bibendum. Etiam nec massa ac enim vehicula maximus. Pellentesque semper fermentum maximus. Integer dignissim libero felis, id tempor purus viverra non. Quisque sodales non lacus ut tincidunt. Cras in venenatis leo.”
+            </p>
+            <p class="credenciais">
+              Juliana Ferraz
+            </p>
+            <p>
+              Cliente desde 2018
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="videos container">
+      <p class="titulo alinhamento--centro">Veja aqui nossos<span class="titulo--destaque titulo--destaque--desktop">videos</span></p>
+      <ul class="videos__lista">
+        <li class="videos__itens">
+          <article class="cartao-de-video">
+            <div class="cartao-de-video__video"><img src="https://picsum.photos/278/252" alt="Banner do video"></div>
+            <h3 class="cartao-de-video__titulo">Video XYZ</h3>
+            <p>Publicado em março 2019</p>
+          </article>
+        </li>
+        <li class="videos__itens">
+          <article class="cartao-de-video">
+            <div class="cartao-de-video__video"><img src="https://picsum.photos/278/252" alt="Banner do video"></div>
+            <h3 class="cartao-de-video__titulo">Video XYZ</h3>
+            <p>Publicado em março 2019</p>
+          </article>
+        </li>
+        <li class="videos__itens">
+          <article class="cartao-de-video">
+            <div class="cartao-de-video__video"><img src="https://picsum.photos/278/252" alt="Banner do video"></div>
+            <h3 class="cartao-de-video__titulo">Video XYZ</h3>
+            <p>Publicado em março 2019</p>
+          </article>
+        </li>
+        <li class="videos__itens">
+          <article class="cartao-de-video">
+            <div class="cartao-de-video__video"><img src="https://picsum.photos/278/252" alt="Banner do video"></div>
+            <h3 class="cartao-de-video__titulo">Video XYZ</h3>
+            <p>Publicado em março 2019</p>
+          </article>
+        </li>
+      </ul>
     </section>
   </main>
-  <footer class="container rodape">
-    <div>
-      <img src="assets/img/logo.png" alt="Logo da Casa Verde" class="rodape__logo">
-      <ul class="rodape__social">
-        <li><a href="#" class="rodape__social-midia" title="Facebook"><img src="assets/img/icones/facebook.svg" alt="Facebook"></a></li>
-        <li><a href="#" class="rodape__social-midia" title="Twitter"><img src="assets/img/icones/twitter.svg" alt="Twitter"></a></li>
-        <li><a href="#" class="rodape__social-midia" title="Instagram"><img src="assets/img/icones/instagram.png" alt="Instagram"></a></li>
-      </ul>
+  <footer class="rodape">
+    <div class="container rodape__div">
+      <div>
+        <img src="assets/img/logo.png" alt="Logo da Casa Verde" class="rodape__logo">
+        <ul class="rodape__social">
+          <li><a href="#" class="rodape__social-midia" title="Facebook"><img src="assets/img/icones/facebook.svg" alt="Facebook"></a></li>
+          <li><a href="#" class="rodape__social-midia" title="Twitter"><img src="assets/img/icones/twitter.svg" alt="Twitter"></a></li>
+          <li><a href="#" class="rodape__social-midia" title="Instagram"><img src="assets/img/icones/instagram.png" alt="Instagram"></a></li>
+        </ul>
+      </div>
+      <address class="rodape__unidade texto">
+        <span class="rodape__unidade-titulo">Rio de Janeiro</span>
+        Rua Siqueira Campos, 171, 303 <br>
+        Copacabana <br>
+        Telefone: (21) 99876-0099
+      </address>
+      <address class="rodape__unidade texto">
+        <span class="rodape__unidade-titulo">São Paulo</span>
+        Rua Anita Garibaldi, 33, 13 <br>
+        Sé <br>
+        Telefone: (11) 99875-2201
+      </address>
+      <img src="assets/img/Ilustra_rodape.png" alt="Ilustração do roda-pé" class="ilustracao__rodape">
     </div>
-    <address class="rodape__unidade texto">
-      <span class="rodape__unidade-titulo">Rio de Janeiro</span>
-      Rua Siqueira Campos, 171, 303 <br>
-      Copacabana <br>
-      Telefone: (21) 99876-0099
-    </address>
-    <address class="rodape__unidade texto">
-      <span class="rodape__unidade-titulo">São Paulo</span>
-      Rua Anita Garibaldi, 33, 13 <br>
-      Sé <br>
-      Telefone: (11) 99875-2201
-    </address>
   </footer>
 </body>
 </html>

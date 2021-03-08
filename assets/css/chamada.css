@@ -16,72 +16,43 @@
   margin-bottom: 1.55rem;
 }
 
-.chamada__imagem1 {
+.chamada__imagem--mobile {
   position: absolute;
-  top: 3.25rem;
+  top: 4.25rem;
   right: 0;
 }
 
-.chamada__imagem2 {
-  display: none;
-}
-
-.chamada__formulario {
-  position: relative;
-  
-  z-index: 2;
-}
-
-.chamada2__imagem {
+.chamada__imagem--desktop {
   display: none;
 }
 
 @media (min-width: 1200px) {
   .chamada {
-    padding-left: 11.5rem;
-    padding-top: 9rem;
-
-    background-image: url(../img/splash_cabecalho_desktop.svg);
-    background-position: 35rem;
-    z-index: -2;
+    background-image: none;
   }
 
   .chamada__texto {
     width: 30rem;
   }
 
-  .chamada__imagem1 {
+  .chamada__imagem--mobile {
     display: none;
   }
 
-  .chamada__imagem2 {
+  .chamada__imagem--desktop {
     display: inline-block;
+
     position: absolute;
-    top: -5rem;
-    right: 30rem;
+    top: -10%;
+    left: 30%;
+
     z-index: -1;
   }
-
+  
   .chamada__formulario {
-    width: 40%;
     display: flex;
-    max-height: 75px;
-  }
 
-  .chamada2 {
-    display: flex;
-    justify-content: center;
-    max-height: 350px;
-    margin-top: 15rem;
-  }
-
-  .chamada2__imagem {
-    display: inline;
-    max-width: 585px;
-    max-height: 440px;
-  }
-
-  .chamada2__cartao {
-    padding: 0 2rem;
+    width: 36.56rem;
+    height: 4.67rem;
   }
 }

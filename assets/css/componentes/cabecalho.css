@@ -20,30 +20,33 @@
   width: 1.75rem;
 }
 
-.desktop-nav {
+.cabecalho__nav {
   display: none;
 }
 
 @media (min-width: 1200px) {
-  .cabecalho {
-    justify-content: space-around;
-  }
-
   .cabecalho__carrinho {
     display: none;
   }
 
-  .desktop-nav {
+  .cabecalho__nav {
+    display: inline-block;
+  }
+
+  .cabecalho__nav--lista {
     display: flex;
   }
 
-  .desktop-nav__itens {
-    margin-left: 1rem;
+  .cabecalho__nav--itens {
+    margin: 0 .25rem;
   }
 
-  .desktop-nav__itens-ultimo {
-    margin-left: 2rem;
-    font-weight: bold;
+  .cabecalho__nav--itens:last-child {
     color: var(--preto);
+    
+    padding-left: 1rem;
+    margin-right: 0;
+
+    font-weight: bold;
   }
 }

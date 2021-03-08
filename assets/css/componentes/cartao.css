@@ -8,3 +8,11 @@
 
   box-shadow: 10px 10px 30px var(--preto-transparente);
 }
+
+@media (min-width: 1200px) {
+  .cartao--desktop {
+    padding: 3rem 2rem;
+
+    height: 27.5rem;
+  }
+}
